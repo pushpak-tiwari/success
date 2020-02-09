@@ -1,0 +1,300 @@
+*{
+	margin:0; padding:0; box-sizing:border-box; 
+}
+h2.h202{
+	font-size:35px; 
+}
+p.para-01{
+	font-size:18px; 
+}
+p.para-02{
+	font-size:15px;
+	line-height:1.4em;  
+}
+.globalClss{
+	width:90%;
+	margin:0 auto;
+}
+html{
+	font-family: 'Ubuntu Mono', monospace;
+}
+/* header css start here */
+header{
+	background:#232a34; 
+}
+#logoWrapper{
+	width:auto;
+	display:inline-block;
+	height:60px;  
+}
+#logoWrapper > a{
+	display:block; 
+	text-decoration:none;
+	text-transform:uppercase; 
+	line-height:60px;
+	color:#f2f2f2;
+	font-size:25px; 
+	font-family: 'Kanit', sans-serif;
+	font-weight:bold; 
+	letter-spacing:1px;  
+}
+#hamIconWrapper{
+	width:60px;
+	height:60px;
+	float:right;
+	position:relative;   
+}
+#hamIconContainer{
+	width:30px;
+	height:24px; 
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);  
+}
+#hamIconContainer > div{
+	width:100%;
+	height:4px;
+	background:#f2f2f2; 
+	margin-bottom:6px; 
+}
+#hamIconContainer > div:last-child{
+	margin-bottom:0px;  
+}
+#hamIconContainer:hover{
+	cursor:pointer; 
+}
+
+/* header css end here */
+
+/* -------------------------------------------------------------------------------------- */
+
+/* background image css start from here */
+
+#BGIMG-Wrapper{
+	width:100%;
+	height:92vh;
+	background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('https://images.pexels.com/photos/838413/pexels-photo-838413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center;
+	background-size:cover;  
+}
+
+#BGIMG-Wrapper-INSIDER{
+	width:100%;
+	height:inherit;
+	position:relative;  
+}
+
+#BGIMG-Container{
+	width:90%;
+	padding:25px; 
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-50%);  
+}
+
+#BGIMG-Container > h2.h202{
+	text-align:center;
+	letter-spacing:1px;
+	margin-bottom:12px;
+	color:#f2f2f2;    
+}
+
+#BGIMG-Container > p.para-01{
+	font-size:35px;
+	text-align:center;
+	color:#f2f2f2;      
+}
+
+/* background image css end from here */
+
+/* _______________________________________________________________ */
+
+/* navigation menu css start from here */
+
+.menuWrapper-ON{
+	width:0%;
+	height:100%;
+	position:fixed;
+	top:0;
+	display:none; 
+	background:#232a34;
+	transition:all 0.3s ease-in-out;   
+}
+.menuWrapper-ON > nav{
+	width:90%;
+	height:inherit;
+	margin:50px auto; 
+}
+.menuWrapper-ON > nav > ul{
+	list-style:none; 
+}
+.menuWrapper-ON > nav > ul > li{
+	display:block; 
+}
+.menuWrapper-ON > nav > ul > li > a{
+	text-decoration:none;
+	text-transform:uppercase;  
+	display:inline-block;
+	padding-top:35px;
+	font-size:30px;
+	color:#f2f2f2;   
+}
+
+
+/* navigation menu css end from here */
+
+
+
+/* aboutme.html page css style start here */
+
+#aboutMeWrapper,
+#contactMeWrapper,
+#languagesWrapper{
+	width:90%;
+	margin:0 auto; 
+}
+
+#aboutMeWrapper > h2.h202,
+#contactMeWrapper > h2.h202,
+#languagesWrapper  >h2.h202{
+	text-align:center;
+	margin:15px 0px;
+	padding:8px 0px;  
+}
+.imageWrapper{
+	width:100%;
+	height:200px;
+	margin:15px 0px;
+}
+.imageWrapper > img{
+	width:100%;
+	height:100%;
+	object-fit:cover;  
+}
+.textaboutme{
+	width:100%;
+	padding:10px; 
+}
+.textaboutme > p.para-02{
+	color:#232a34;
+	text-align:justify; 
+}
+/* aboutme.html page css style end here */
+
+/* contact me css style starts here */
+#contactMeWrapper{
+	margin-bottom:25px; 
+}
+#contactMeWrapper > .imageWrapper{
+	margin-bottom:20px; 
+}
+#contactMeWrapper > .imageWrapper > img{
+	object-position:top center;  
+}
+
+#formWrapper{
+	width:100%;
+}	
+
+.inputFields{
+	width:100%;
+	margin-bottom:18px;  
+}
+
+label{
+	font-size:18px; 
+	display:block; 
+	margin-bottom:10px; 
+}
+#query{
+	width:100%;
+	padding:8px; 
+	border:1pt solid #232a34; 
+}
+input{
+	width:100%;
+	padding:8px;
+	outline:none;
+	border:1pt solid #232a34; 
+}
+
+input#submit{
+	background:#232a34;
+	color:#f2f2f2; 
+	cursor:pointer;
+	width:100px; 
+	letter-spacing:1px;
+	border:none;
+	transition:all .3s ease-in-out;     
+}
+
+input#submit:hover{
+	background:red;
+	color:#fff; 
+}
+/* contact me css style end here */
+
+
+
+/* languages css style start from here */
+.languagesContainer{
+	width:100%;
+	margin-bottom:25px;  
+}
+.languagesContainer > h3{
+	color:#607d8b;
+	background:#232a34;
+	color:#f2f2f2;
+	width:auto;
+	display:inline-block;
+	padding:8px;
+	border-radius:1000px;
+	font-weight:300;        
+}
+.languagesContainer > ul{
+	list-style:none; 
+}
+.languagesContainer > ul > li{
+	display:block;
+	padding-top:15px; 
+	font-size:20px;  
+	text-transform:uppercase;  
+}
+.languagesContainer:last-child > ul > li{
+	font-size:16px;
+	text-align:justify;
+	line-height:20px;  
+}
+/* languages css style end here */
+
+
+/* responsive designs css according to device width */
+
+@media screen and (min-width: 450px){
+	#aboutMeWrapper > .imageWrapper > img,
+	#contactMeWrapper > .imageWrapper > img,
+	#languagesWrapper > .imageWrapper > img{
+		object-fit:contain; 
+	}
+
+	#query,
+	input{
+		width:70%; 
+	}
+}
+
+
+@media screen and (min-width: 790px){
+	#query,
+	input{
+		width:50%; 
+	}
+}
+
+@media screen and (min-width: 1000px){
+	#query,
+	input{
+		width:30%; 
+	}
+}

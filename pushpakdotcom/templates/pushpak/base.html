@@ -1,0 +1,75 @@
+{%  load static %}
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'css/pushpak.css' %}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="globalClss">
+				<div id="logoWrapper">
+					<a href="{% url 'home' %}">Pushpak</a>
+				</div>
+
+				<div id="hamIconWrapper">
+					<div id="hamIconContainer">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>	
+			</div>	
+		</header>
+		
+		{% block bg %}
+
+		{% endblock %}
+
+
+		<section class="menuWrapper-ON">
+			<nav>
+				<ul>
+					<li>
+						<a href="{% url 'home' %}">home</a>
+					</li><li>
+						<a href="{% url 'aboutme' %}">about me</a>
+					</li><li>
+						<a href="{% url 'contactme' %}">contact me</a>
+					</li><li>
+						<a href="{% url 'languages' %}">languages</a>
+					</li><li>
+						<a href="#" id="menuWrapper-OFF">Exit</a>
+					</li>
+				</ul>	
+			</nav>	
+		</section>
+
+		<!-- JAVASCRIPT START FROM HERE -->
+
+		<script>
+
+			let hamIconContainer = document.getElementById('hamIconContainer');
+			let menuWrapperOFF = document.getElementById('menuWrapper-OFF');
+			let menuWrapperON = document.getElementsByClassName('menuWrapper-ON')[0];
+
+			hamIconContainer.addEventListener('click',openNav);
+			menuWrapperOFF.addEventListener('click', closeNav);
+
+			function openNav(){
+				menuWrapperON.style.display = 'block';
+				menuWrapperON.style.width = '100%';
+			}
+
+			function closeNav(){
+				menuWrapperON.style.display = 'none';
+				menuWrapperON.style.width = '0%';
+			}
+
+
+		</script>
+
+	</body>
+</html>		
